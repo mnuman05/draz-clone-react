@@ -1,0 +1,49 @@
+.navbar-font-color {
+  color: #fff;
+}
+
+.navbar-font {
+  position: relative;
+  display: inline-block;
+  font-size: 12px;
+  height: 25px;
+  line-height: 25px;
+  text-align: left;
+  white-space: nowrap;
+  cursor: pointer;
+  color: #fff;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+  margin-right: 22px;
+  padding-left: 0;
+}
+
+.menu-links ul li {
+  margin-left: 23px;
+}
+
+.save-more-icon {
+  width: 20px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.top-links-item {
+    display: flex;
+    background-color: #ad3c03;
+    position: relative;
+    display: inline-block;
+    font-size: 12px;
+    height: 25px;
+    line-height: 25px;
+    text-align: left;
+    white-space: nowrap;
+    cursor: pointer;
+    color: #fff;
+    transition: color 0.2s;
+    margin-right: 81px;
+    padding-left: 0;
+    padding: 4px;
+    width: 133px;
+    border-bottom: 57px;
+}
