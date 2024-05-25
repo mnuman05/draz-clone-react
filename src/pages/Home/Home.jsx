@@ -15,8 +15,8 @@ const Home = () => {
           </span>
         </div>
 
-        <div className="register-form d-flex mt-4">
-          <div className="right-col p-4">
+        <div className="register-form row mt-4">
+          <div className="col-12 col-md-6 p-4">
             <div className="register-field d-flex flex-column mb-4">
               <label>Phone Number*</label>
               <input type="text" placeholder="Please Enter you Number"></input>
@@ -94,7 +94,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="left-col p-4 ">
+          <div className="col-12 col-md-6 p-4 ">
             <div className="register-field d-flex flex-column mb-4">
               <label>Full Name*</label>
               <input

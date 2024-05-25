@@ -3,10 +3,10 @@ import "./UpperNavbar.css";
 
 function UpperNavbar() {
   return (
-    <div className="uper-navbar w-100 first-primary d-flex justify-content-between">
+    <div className="uper-navbar d-none w-100 d-md-flex justify-content-between">
       <div className="menu-links navbar-font">
-        <ul className="d-flex ms-4">
-          <li>Become a Seller</li>
+        <ul className="d-flex px-0">
+          <li className="ms-0">Become a Seller</li>
           <li>Daraz Affiliate Program</li>
           <li>Help & Support</li>
           <li>Daraz Logistics Partner</li>
@@ -14,7 +14,7 @@ function UpperNavbar() {
       </div>
       <div className="">
         <div
-          class="top-links-item orange save-more d-flex"
+          class="top-links-item orange save-more d-flex align-items-center me-0"
           id="topActionDownload"
           data-spm-click="gostr=/lzdpub.header.tbar;locaid=d1"
         >
