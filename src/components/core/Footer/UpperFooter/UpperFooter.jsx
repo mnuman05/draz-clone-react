@@ -1,8 +1,24 @@
 import React from 'react'
 import './upperFooter.css'
-import Pakistan from '../../../../images/pakistan.png'
+import QRCode from '../../../../images/footer-qr.png'
+import SocialIcons from "../../../../images/footer-social-icons.png";
+
+import PakF from "../../../../images/pak-f.png"
+import BngF from "../../../../images/bng-f.png";
+import MynF from "../../../../images/myn-f.png";
+import SrlF from "../../../../images/srl-f.png";
+import NepF from "../../../../images/nep-f.png";
+
+import Verified from "../../../../images/verified.png";
+import PaymentCard from "../../../../images/payment-card.png";
+
+
+
+
 import { Mastercard, Visa, Paypal, Maestro, Discover, Alipay, Hiper, Unionpay, Generic, Mir } from "react-payment-logos/dist/flat";
 import { BsQrCode } from "react-icons/bs";
+import { Image } from 'react-bootstrap';
+
 
 
 
@@ -102,13 +118,14 @@ const UpperFooter = () => {
                 <div className="footer-flags d-flex mb-2">
                   <li className="footer-li me-4">
                     <a href="#" className="">
-                      <span class="fi fi-pk fis country-flag"></span>
+                      <Image src={PakF} />
                       <span className="ms-2 mb-2">Pakistan</span>
                     </a>
                   </li>
                   <li className="footer-li">
                     <a href="#" className="">
-                      <span class="fi fi-bd fis country-flag"></span>
+                      {/* <span class="fi fi-bd fis country-flag"></span> */}
+                      <Image src={BngF} />
                       <span className="ms-2 mb-2">Bangladesh</span>
                     </a>
                   </li>
@@ -116,13 +133,15 @@ const UpperFooter = () => {
                 <div className="footer-flags d-flex mb-2">
                   <li className="footer-li me-4">
                     <a href="#" className="">
-                      <span class="fi fi-sr fis country-flag"></span>
+                      {/* <span class="fi fi-sr fis country-flag"></span> */}
+                      <Image src={SrlF} />
                       <span className="ms-2 mb-2">Sri Lanka</span>
                     </a>
                   </li>
                   <li className="footer-li">
                     <a href="#" className="">
-                      <span class="fi fi-mm fis country-flag"></span>
+                      {/* <span class="fi fi-mm fis country-flag"></span> */}
+                      <Image src={MynF} />
                       <span className="ms-2 mb-2">Myanmar</span>
                     </a>
                   </li>
@@ -130,7 +149,8 @@ const UpperFooter = () => {
                 <div className="footer-flags d-flex mb-2">
                   <li className="footer-li me-4">
                     <a href="#" className="">
-                      <span class="fi fi-np fis country-flag"></span>
+                      {/* <span class="fi fi-np fis country-flag"></span> */}
+                      <Image src={NepF} />
                       <span className="ms-2 mb-2">Nepal</span>
                     </a>
                   </li>
@@ -141,7 +161,7 @@ const UpperFooter = () => {
 
               <h3 className="footer-title">Payment Methods</h3>
               <ul className="footer-link-list ps-0 m-0">
-                <div className="footer-flags d-flex mb-2">
+                {/* <div className="footer-flags d-flex mb-2">
                   <Mastercard
                     width={40}
                     height={40}
@@ -158,10 +178,11 @@ const UpperFooter = () => {
                     height={40}
                     style={{ marginRight: "8px" }}
                   />
-                </div>
+                </div> */}
 
                 <div className="footer-flags d-flex mb-2">
-                  <Discover
+                  <Image src={PaymentCard} />
+                  {/* <Discover
                     width={40}
                     height={40}
                     style={{ marginRight: "8px" }}
@@ -180,31 +201,39 @@ const UpperFooter = () => {
                     width={40}
                     height={40}
                     style={{ marginRight: "8px" }}
-                  />
+                  /> */}
                 </div>
 
-                <div className="footer-flags d-flex mb-2">
+                {/* <div className="footer-flags d-flex mb-2">
                   <Generic
                     width={40}
                     height={40}
                     style={{ marginRight: "8px" }}
                   />
-                </div>
+                </div> */}
               </ul>
 
               <h3 className="footer-title">Verified by</h3>
               <ul className="footer-link-list ps-0 m-0">
                 <div className="footer-flags d-flex mb-2">
-                  <Mir width={80} height={80} style={{ marginRight: "8px" }} />
+                  {/* <Mir width={80} height={80} style={{ marginRight: "8px" }} /> */}
+                  <Image src={Verified} />
                 </div>
               </ul>
             </div>
             {/* Column 4 */}
             <div className="col-lg-3 col-md-12 col-sm-12 mb-4">
               <h3 className="footer-title">Exclusive Deals and Offers!</h3>
-              <ul className="footer-link-list ps-0 m-0">
-                <div className="footer-flags d-flex mb-2">
-                  <BsQrCode />
+              <ul className="footer-link-list ps-0 m-0 p-6">
+                <div className="footer-qr d-flex mb-2">
+                  <Image src={QRCode} />
+                </div>
+              </ul>
+
+              <h3 className="footer-title">Follow Us</h3>
+              <ul className="footer-link-list ps-0 m-0 p-6">
+                <div className="footer-qr d-flex mb-2">
+                  <Image src={SocialIcons} className="ms-3" />
                 </div>
               </ul>
             </div>

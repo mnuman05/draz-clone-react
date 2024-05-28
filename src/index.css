@@ -124,6 +124,9 @@ select {
 .fs-12{
     font-size: 12px;
 }
+.fs-15{
+    font-size: 15px;
+}
 
 textarea {
   vertical-align: top;
@@ -154,4 +157,11 @@ textarea {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+
+@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1212px !important;
+    }
 }

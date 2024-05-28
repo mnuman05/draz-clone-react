@@ -1,7 +1,7 @@
 .lower-nav {
-    height: 66px;
+    height: 61px;
     box-sizing: border-box;
-    padding-top: 11px;
+    /* padding-top: 11px; */
 }
 
 /* .lzd-logo-content {
@@ -16,6 +16,12 @@
 
 .logo {
     width: 130px;
+}
+
+.nav-draz-logo{
+    width: 120px;
+    height: 48px;
+    margin-bottom: 8px;
 }
 
 .lzd-logo-content {
@@ -64,11 +70,14 @@
 .lower-nav-search {
     margin-bottom: 0;
     width: 53%;
+    margin-left: -6px;
 }
 
 .lower-nav-search input {
-    height: 79%;
+    height: 70%;
     border-radius: 12px;
+    margin-top: 6px;
+    width: 102.7%;
 }
 
 .login-btn {
@@ -79,8 +88,8 @@
 
 .login-btn span {
     color: #fff9f5;
-    font-size: small;
-    font-weight: 900;
+    font-size: 12.5px;
+    font-weight: 700;
     margin-left: 9px
 }
 
@@ -93,17 +102,19 @@
 .categories-dropdown {
     align-items: center;
     /* justify-content: flex-end; */
-    margin-left: 23px;
+    margin-left: 27px;
     margin-right: 4px;
     /* padding: 0px 3px; */
+
+    margin-bottom: 7px;
 }
 
 .categories-dropdown a {
     text-decoration: none;
     color: #fff9f5;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 40px;
-    font-weight: 600;
+    font-weight: 700;
     text-align: left;
 }
 .categories-dropdown svg {
@@ -112,4 +123,25 @@
     font-weight: bold;
     padding: -7px;
 
+    /* margin-right: -7px; */
+    margin-left: -4px;
+    margin-top: 1px;
+
+}
+
+.language-btn{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+.lower-nav-cart svg {
+    color: white;
+    height: 100%;
+    width: 30px;
+}
+
+.hover-effect:hover{
+    background: #de4d04;
+    cursor: pointer;
 }

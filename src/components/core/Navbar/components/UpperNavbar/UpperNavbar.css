@@ -49,3 +49,9 @@
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
 }
+
+.menu-links ul li:hover  {
+    color: #fff;
+    text-decoration: none;
+    opacity: .8;
+}

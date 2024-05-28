@@ -9,6 +9,7 @@ import Footer from "../components/core/Footer/Footer";
 // import Sidebar from "../components/Sidebar/Sidebar.jsx";
 // import { LARGE_SIDEBAR_WIDTH, SMALL_SIDEBAR_WIDTH } from "../config/index.js";
 // import "../pages/Home/css/home.css";
+import './layout.css'
 
 function Layout() {
     console.log("cine");
@@ -30,7 +31,7 @@ function Layout() {
   return (
     <div className="main">
       <Header />
-      <div className="">
+      <div className="body">
         <Outlet />
       </div>
       <Footer />
