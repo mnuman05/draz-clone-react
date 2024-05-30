@@ -1,252 +1,419 @@
 .body {
-    background-color: #f0f1f5 !important
-}
-
-.register-form {
-    width: 98.9%;
-    background-color: #ffffff;
-}
-
-.register-form-left-col {
-    width: 52.9% !important
-}
-
-.register-form-right-col {
-    width: 43.6% !important
-}
-
-.register-form .right-col {
-    width: 53%;
-}
-
-.register-form .left-col {
-    width: 44%;
-}
-
-.register-container {
-background-color: #f0f1f5;
-    width: 60vw;
-    margin-top: 1.5rem;
+  background-color: #f0f1f5 !important;
 }
 
 .register-heading h3 {
-    font-size: 22px;
-    color: #424242;
-    font-weight: 400;
+  margin-left: 10px;
+}
+
+.register-form {
+  width: 98.9%;
+  background-color: #ffffff;
+  margin-left: 11px !important;
+}
+
+.register-form-left-col {
+  width: 52.9% !important;
+  margin-bottom: 45px;
+}
+
+.register-form-right-col {
+  width: 43.6% !important;
+}
+
+.register-form .right-col {
+  width: 53%;
+}
+
+.register-form .left-col {
+  width: 44%;
+}
+
+.register-container {
+  background-color: #f0f1f5;
+  width: 60vw;
+  margin-top: 1.5rem;
+}
+
+.register-heading h3 {
+  font-size: 22px;
+  color: #424242;
+  font-weight: 400;
 }
 
 .register-heading span {
-    color: #757575;
-    
+  color: #757575;
 }
 
 .register-field label {
-    font-size: 12px;
-    height: 15px;
-    line-height: 15px;
-    overflow: hidden;
-    color: #424242;
-    display: block;
-    margin-bottom: 5px;
+  font-size: 12px;
+  height: 15px;
+  line-height: 15px;
+  overflow: hidden;
+  color: #424242;
+  /* display: block; */
+  margin-bottom: 5px;
 }
 
-.register-field input{
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 100%;
-    border: 1px solid #ddd;
-    font-size: 14px;
-    height: 40px;
-    line-height: 38px \0;
-    padding: 0 35px 0 10px;
-    margin-bottom: 2px;
-    outline: none;
+.register-field input {
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  height: 40px;
+  line-height: 38px \0;
+  padding: 0 35px 0 10px;
+  margin-bottom: 2px;
+  outline: none;
+}
+
+.mod-login-receive p {
+  color: #a8a8a8;
+}
+
+.mod-login-policy {
+  color: #a8a8a8;
 }
 
 .register-field input::placeholder {
-    color: #a8a8a8;
+  color: #a8a8a8;
 }
 
-.register-field select{
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 100%;
-    border: 1px solid #ddd;
-    font-size: 14px;
-    height: 40px;
-    line-height: 38px \0;
-    padding: 0 35px 0 10px;
-    margin-bottom: 2px;
-    outline: none;
+.register-field select {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  height: 40px;
+  line-height: 38px \0;
+  padding: 0 35px 0 10px;
+  margin-bottom: 2px;
+  outline: none;
 }
 
 .mod-login-receive label {
-    margin-right: 10px;
-    position: relative;
-    top: 2px;
+  margin-right: 10px;
+  position: relative;
+  top: 2px;
 }
 
 .mod-login-receive {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
 }
 
 .next-checkbox {
-    display: inline-block;
-    vertical-align: middle;
-    position: relative;
-    width: 16px;
-    height: 16px;
-    line-height: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  line-height: 14px;
 }
 
 .next-checkbox.checked .next-checkbox-inner {
-    border-color: #f57224;
-    background-color: #f57224;
+  border-color: #f57224;
+  background-color: #f57224;
 }
 
 .next-checkbox .next-checkbox-inner {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border-radius: 2px;
-    border: 1px solid #757575;
-    transition: all .3s ease 0s;
-    text-align: left;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border-radius: 2px;
+  border: 1px solid #757575;
+  transition: all 0.3s ease 0s;
+  text-align: left;
 }
 
-.next-checkbox.checked .next-checkbox-inner>.next-icon {
-    opacity: 1;
-    transform: scaleX(1);
-    margin-left: 1px;
+.next-checkbox.checked .next-checkbox-inner > .next-icon {
+  opacity: 1;
+  transform: scaleX(1);
+  margin-left: 1px;
 }
 
-.next-checkbox .next-checkbox-inner>.next-icon {
-    opacity: 0;
-    transform: scale3d(0, 0, 0);
-    line-height: 14px;
-    transition: all .3s ease 0s;
-    color: #fff;
-    margin-top: 1px;
-    margin-left: 1px;
+.next-checkbox .next-checkbox-inner > .next-icon {
+  opacity: 0;
+  transform: scale3d(0, 0, 0);
+  line-height: 14px;
+  transition: all 0.3s ease 0s;
+  color: #fff;
+  margin-top: 1px;
+  margin-left: 1px;
 }
 
 .next-icon {
-    position: relative;
-    display: inline-block;
-    font-family: NextIcon;
-    font-style: normal;
-    font-weight: 400;
-    font-variant: normal;
-    text-transform: none;
-    -webkit-font-smoothing: antialiased;
-    -webkit-text-stroke-width: .1px;
-    -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  display: inline-block;
+  font-family: NextIcon;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.1px;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.next-checkbox input[type=checkbox] {
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 16px;
-    height: 16px;
-    margin: 0;
+.next-checkbox input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  margin: 0;
 }
 
 .mod-login-btn {
-    margin: 12px 0;
+  margin: 12px 0;
 }
 
 .mod-login button {
-    width: 100%;
+  width: 100%;
 }
 
 .next-btn-large {
-    margin: 0;
-    height: 48px;
-    padding: 0 36px;
-    font-size: 14px;
-    line-height: 46px;
-    border-width: 1px;
+  margin: 0;
+  height: 48px;
+  padding: 0 36px;
+  font-size: 14px;
+  line-height: 46px;
+  border-width: 1px;
 }
 
-
-.next-btn-primary, .next-btn-primary.visited, .next-btn-primary:link, .next-btn-primary:visited {
-    color: #fff;
+.next-btn-primary,
+.next-btn-primary.visited,
+.next-btn-primary:link,
+.next-btn-primary:visited {
+  color: #fff;
 }
 
 .next-btn-primary {
-    border-style: solid;
-    background-color: #f57224;
-    border-color: transparent;
+  border-style: solid;
+  background-color: #f57224;
+  border-color: transparent;
 }
 
-.next-btn, .next-btn:active, .next-btn:focus {
-    outline: 0;
+.next-btn,
+.next-btn:active,
+.next-btn:focus {
+  outline: 0;
 }
 
 .next-btn {
-    position: relative;
-    display: inline-block;
-    font-style: normal;
-    font-family: inherit;
-    background: transparent;
-    cursor: pointer;
-    transition: all .3s ease-out;
-    box-shadow: none;
-    border-radius: 2px;
-    border-style: solid;
-    text-align: center;
+  position: relative;
+  display: inline-block;
+  font-style: normal;
+  font-family: inherit;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  box-shadow: none;
+  border-radius: 2px;
+  border-style: solid;
+  text-align: center;
 }
 
-.next-btn, .next-btn *, .next-btn:after, .next-btn :after, .next-btn:before, .next-btn :before {
-    box-sizing: border-box;
+.next-btn,
+.next-btn *,
+.next-btn:after,
+.next-btn :after,
+.next-btn:before,
+.next-btn :before {
+  box-sizing: border-box;
 }
 
+.primary-button {
+  position: relative;
+  display: inline-block;
+  font-style: normal;
+  font-family: inherit;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  box-shadow: none;
+  border-radius: 2px;
+  border-style: solid;
+  text-align: center;
+  color: #fff;
+  border-style: solid;
+  background-color: #f57224;
+  border-color: transparent;
 
-.primary-button{
-    position: relative;
-    display: inline-block;
-    font-style: normal;
-    font-family: inherit;
-    background: transparent;
-    cursor: pointer;
-    transition: all .3s ease-out;
-    box-shadow: none;
-    border-radius: 2px;
-    border-style: solid;
-    text-align: center;
-color: #fff;
-    border-style: solid;
-    background-color: #f57224;
-    border-color: transparent;
-
-        margin: 0;
-    height: 48px;
-    padding: 0 36px;
-    font-size: 14px;
-    line-height: 46px;
-    border-width: 1px;
+  margin: 0;
+  height: 48px;
+  padding: 0 36px;
+  font-size: 14px;
+  line-height: 46px;
+  border-width: 1px;
 }
 
 .primary-button:focus:hover {
-    color: #fff;
-    background-color: #d0611e;
-    border-color: transparent;
-    text-decoration: none;
+  color: #fff;
+  background-color: #d0611e;
+  border-color: transparent;
+  text-decoration: none;
 }
 
 .register-heading span {
-    font-size: 12px;
-    line-height: 30px;
-    color: #757575;
+  font-size: 12px;
+  line-height: 30px;
+  color: #757575;
 }
 
 .register-heading span a {
-    color: #1a9cb7;
-    text-decoration: none;
+  color: #1a9cb7;
+  text-decoration: none;
+}
+
+.register-social-icon {
+  position: relative;
+  bottom: 15px;
+}
+
+.small-heading-color {
+  color: #757575 !important;
+}
+
+.mod-sendcode {
+  position: relative;
+  bottom: 36px;
+  left: 346px;
+}
+
+.mod-sendcode button {
+  color: #a0a0a0;
+  font-size: 12px;
+}
+
+/* .drop-down-icon {
+        position: absolute;
+    margin-top: 29px;
+       margin-left: 97px;
+} */
+
+/* .drop-down-icon-gender {
+    position: absolute;
+    margin-top: 29px;
+    margin-left: 73px;
+} */
+
+/* .drop-down-icon-day {
+    position: absolute;
+    margin-top: 29px;
+    margin-left: 40px;
+} */
+
+/* .drop-down-icon-year {
+    position: absolute;
+    margin-top: 29px;
+    margin-left: 53px;
+} */
+
+.birthd-inp {
+  width: 31.7% !important;
+}
+.birthd-inp-year {
+  width: 75px !important;
+}
+
+.birthd-inp-day {
+  width: 60px !important;
+}
+
+.mod-login-policy {
+  line-height: normal;
+}
+
+.mod-send-code {
+  position: absolute;
+  color: #a0a0a0;
+  font-size: 12px;
+  top: 30px;
+  right: 9px;
+}
+
+.register-eye-icon {
+  position: absolute;
+  /* margin-top: 27px;
+    margin-left: 345px; */
+  top: 27px;
+  right: 5px;
+}
+
+.drop-down-icon-day {
+  position: absolute;
+  /* margin-top: 29px;
+    margin-left: 40px; */
+  top: 29px;
+  right: 2px;
+}
+
+.drop-down-icon {
+  position: absolute;
+  top: 30px;
+  right: 5px;
+  /* margin-top: 29px;
+       margin-left: 97px; */
+}
+
+.drop-down-icon-year {
+  position: absolute;
+  /* margin-top: 29px;
+    margin-left: 53px; */
+  top: 29px;
+  right: 2px;
+}
+
+.drop-down-icon-gender {
+  position: absolute;
+  /* margin-top: 29px;
+    margin-left: 73px; */
+  top: 28px;
+  right: 3px;
+}
+
+@media (max-width: 640px) {
+  .birthday {
+    flex-wrap: wrap;
+  }
+
+  .birthday-month {
+    width: 50% !important
+  }
+
+  .birthday-day {
+        width: 50% !important
+
+  }
+
+  .birthday-year {
+    margin-top: 8px !important;
+    width: 50% !important
+  }
+
+  .gender {
+    margin-top: 8px !important;
+    width: 50% !important
+  }
+}
+
+@media (min-width: 641px) {
+  .gender {
+    margin-left: 2px !important;
+    margin-top: 0 !important; /* Reset margin-top */
+  }
+}
+
+@media (max-width: 1200px) {
+  .register-form-left-col {
+    width: 100% !important;
+  }
+  .register-form-right-col {
+    width: 100% !important;
+  }
 }

@@ -165,3 +165,7 @@ textarea {
         max-width: 1212px !important;
     }
 }
+
+.img{
+  z-index: 1;
+}

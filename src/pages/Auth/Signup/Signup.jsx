@@ -1,8 +1,15 @@
-import React from 'react'
+import React from "react";
 import "./signup.css";
 
-
 import { MDBBtn, MDBIcon } from "mdb-react-ui-kit";
+
+import SocialIcon from "../../../images/social-button.png";
+import EyeIcon from "../../../images/eye-icon.png";
+
+import DropdownIcon from "../../../images/upper-lower-arrow.png";
+
+
+import { Image } from "react-bootstrap";
 
 const Signup = () => {
   return (
@@ -15,7 +22,7 @@ const Signup = () => {
           </span>
         </div>
 
-        <div className="register-form row mt-4 ms-0 me-0">
+        <div className="register-form row mt-4">
           <div className="col-12 col-md-6 p-4 register-form-left-col">
             <div className="register-field d-flex flex-column mb-4">
               <label>Phone Number*</label>
@@ -26,30 +33,29 @@ const Signup = () => {
               <span></span>
             </div>
 
-            <div className="register-field d-flex flex-column mb-4">
+            <div className="register-field d-flex flex-column mb-4 position-relative">
               <label>Verfication Code from whatsApp*</label>
-              <input type="number" placeholder="Verification Code"></input>
+              <input placeholder="Verification Code"></input>
               <span></span>
-            {/* <div class="mod-sendcode disable">
-              <button class="mod-sendcode-btn" disabled="">
-                Send
-              </button>
-            </div> */}
+
+              <span className="mod-send-code">Send</span>
             </div>
 
-
-            <div className="register-field d-flex flex-column mb-4">
+            <div className="register-field d-flex flex-column mb-4 position-relative">
               <label>Password*</label>
               <input
                 type="password"
                 placeholder="Minimum 6 characters with a number and a letter"
               ></input>
               <span></span>
+              <div className="register-eye-icon">
+                <Image src={EyeIcon} />
+              </div>
             </div>
 
             <div className="register-field d-flex flex-column">
-              <div className="d-flex flex-row">
-                <div className="col-4 d-flex flex-column">
+              <div className="d-flex flex-row birthday">
+                <div className="col-4 d-flex flex-column birthd-inp position-relative birthday-month">
                   <label>Birthday</label>
                   <select>
                     <option value="January">January</option>
@@ -65,11 +71,15 @@ const Signup = () => {
                     <option value="November">November</option>
                     <option value="December">December</option>
                   </select>
+
+                  <div className="drop-down-icon">
+                    <Image src={DropdownIcon} />
+                  </div>
                 </div>
 
-                <div className="col-2 d-flex flex-column">
+                <div className="col-2 d-flex flex-column birthd-inp-day position-relative birthday-day">
                   <label></label>
-                  <select>
+                  <select style={{ minWidth: "72px" }}>
                     {Array.from({ length: 31 }, (_, index) => {
                       const day = index + 1;
                       const paddedDay = day.toString().padStart(2, "0");
@@ -80,32 +90,48 @@ const Signup = () => {
                       );
                     })}
                   </select>
+
+                  <div className="drop-down-icon-day">
+                    <Image src={DropdownIcon} />
+                  </div>
                 </div>
 
-                <div className="col-2 d-flex flex-column">
+                <div className="col-2 d-flex flex-column birthd-inp-year position-relative birthday-year">
                   <label></label>
-                  <select>
+                  <select
+                    style={{
+                      padding: "10px",
+                    }}
+                  >
                     {Array.from({ length: 125 }, (_, index) => (
                       <option key={index} value={1900 + index}>
                         {1900 + index}
                       </option>
                     ))}
                   </select>
+
+                  <div className="drop-down-icon-year">
+                    <Image src={DropdownIcon} />
+                  </div>
                 </div>
 
-                <div className="col-3 d-flex flex-column ms-2">
+                <div className="col-3 d-flex flex-column position-relative gender">
                   <label>Gender</label>
                   <select>
                     <option value="male">Male</option>
                     <option value="female">Female</option>
                   </select>
+
+                  <div className="drop-down-icon-gender">
+                    <Image src={DropdownIcon} />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div className="col-12 col-md-6 p-4 register-form-right-col">
             <div className="register-field d-flex flex-column mb-4">
-              <label>Full Name*</label>
+              <label>Full name*</label>
               <input
                 type="text"
                 placeholder="Enter your first and last name"
@@ -127,7 +153,7 @@ const Signup = () => {
                     value="on"
                   />
                 </label>
-                <p className="mb-2">
+                <p className="mb-2 small-heading-color">
                   I'd like to receive exclusive offers and promotions via SMS
                 </p>
               </div>
@@ -141,7 +167,7 @@ const Signup = () => {
 
             <div className="register-field d-flex flex-column mb-3">
               <div class="mod-login-policy fs-12">
-                <span>
+                <span className="small-heading-color">
                   By clicking “SIGN UP”, I agree to Daraz's{" "}
                   <a
                     href="https://www.daraz.pk/terms-conditions"
@@ -166,10 +192,10 @@ const Signup = () => {
             </div>
 
             <div className="register-field d-flex flex-column mb-1">
-              <p className="fs-12">Or, sign up with</p>
+              <p className="fs-12 small-heading-color">Or, sign up with</p>
             </div>
 
-            <div className="register-field d-flex flex-column mb-1">
+            <div className="register-field d-flex flex-column mb-1 register-social-icon">
               {/* <div className="register-social-button">
                 <a
                   data-mdb-ripple-init
@@ -196,11 +222,12 @@ const Signup = () => {
               </div> */}
 
               <div className="register-icons d-flex justify-content-between">
-                <MDBBtn
+                {/* <MDBBtn
                   style={{
                     backgroundColor: "#3c5999",
                     width: "49%",
                     border: "none",
+                    borderRadius: "3px",
                   }}
                   href="#"
                 >
@@ -212,11 +239,14 @@ const Signup = () => {
                     backgroundColor: "#d44937",
                     width: "49%",
                     border: "none",
+                    borderRadius: "3px",
                   }}
                   href="#"
                 >
                   <MDBIcon fab icon="google-plus" className="me-2" /> Google
-                </MDBBtn>
+                </MDBBtn> */}
+
+                <Image src={SocialIcon} />
               </div>
             </div>
           </div>
@@ -224,6 +254,6 @@ const Signup = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Signup
+export default Signup;

@@ -5,7 +5,7 @@ import './Header.css'
 
 const Header = () => {
   return (
-    <div className="first-primary w-100">
+    <div className="first-primary w-100 position-sticky">
       <div className='nav-container mx-auto'>
         <UpperNavbar />
         <LowerNavbar />

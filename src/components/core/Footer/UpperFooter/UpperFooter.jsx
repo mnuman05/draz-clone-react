@@ -1,9 +1,9 @@
-import React from 'react'
-import './upperFooter.css'
-import QRCode from '../../../../images/footer-qr.png'
+import React from "react";
+import "./upperFooter.css";
+import QRCode from "../../../../images/footer-qr.png";
 import SocialIcons from "../../../../images/footer-social-icons.png";
 
-import PakF from "../../../../images/pak-f.png"
+import PakF from "../../../../images/pak-f.png";
 import BngF from "../../../../images/bng-f.png";
 import MynF from "../../../../images/myn-f.png";
 import SrlF from "../../../../images/srl-f.png";
@@ -11,16 +11,23 @@ import NepF from "../../../../images/nep-f.png";
 
 import Verified from "../../../../images/verified.png";
 import PaymentCard from "../../../../images/payment-card.png";
+import ATMCard from "../../../../images/atm-card.png";
 
 
-
-
-import { Mastercard, Visa, Paypal, Maestro, Discover, Alipay, Hiper, Unionpay, Generic, Mir } from "react-payment-logos/dist/flat";
+import {
+  Mastercard,
+  Visa,
+  Paypal,
+  Maestro,
+  Discover,
+  Alipay,
+  Hiper,
+  Unionpay,
+  Generic,
+  Mir,
+} from "react-payment-logos/dist/flat";
 import { BsQrCode } from "react-icons/bs";
-import { Image } from 'react-bootstrap';
-
-
-
+import { Image } from "react-bootstrap";
 
 const UpperFooter = () => {
   return (
@@ -115,43 +122,43 @@ const UpperFooter = () => {
             <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
               <h3 className="footer-title">Daraz International</h3>
               <ul className="footer-link-list ps-0 m-0">
-                <div className="footer-flags d-flex mb-2">
-                  <li className="footer-li me-4">
-                    <a href="#" className="">
+                <div className="footer-flags d-flex">
+                  <li className="footer-li w-50">
+                    <a href="#" className="d-flex align-items-center">
                       <Image src={PakF} />
-                      <span className="ms-2 mb-2">Pakistan</span>
+                      <span className="">Pakistan</span>
                     </a>
                   </li>
-                  <li className="footer-li">
-                    <a href="#" className="">
+                  <li className="footer-li w-50">
+                    <a href="#" className="d-flex align-items-center">
                       {/* <span class="fi fi-bd fis country-flag"></span> */}
                       <Image src={BngF} />
-                      <span className="ms-2 mb-2">Bangladesh</span>
+                      <span className="">Bangladesh</span>
                     </a>
                   </li>
                 </div>
-                <div className="footer-flags d-flex mb-2">
-                  <li className="footer-li me-4">
-                    <a href="#" className="">
+                <div className="footer-flags d-flex">
+                  <li className="footer-li w-50">
+                    <a href="#" className="d-flex align-items-center">
                       {/* <span class="fi fi-sr fis country-flag"></span> */}
                       <Image src={SrlF} />
-                      <span className="ms-2 mb-2">Sri Lanka</span>
+                      <span className="">Sri Lanka</span>
                     </a>
                   </li>
-                  <li className="footer-li">
-                    <a href="#" className="">
+                  <li className="footer-li w-50">
+                    <a href="#" className="d-flex align-items-center">
                       {/* <span class="fi fi-mm fis country-flag"></span> */}
                       <Image src={MynF} />
-                      <span className="ms-2 mb-2">Myanmar</span>
+                      <span className="">Myanmar</span>
                     </a>
                   </li>
                 </div>
-                <div className="footer-flags d-flex mb-2">
-                  <li className="footer-li me-4">
-                    <a href="#" className="">
+                <div className="footer-flags d-flex">
+                  <li className="footer-li">
+                    <a href="#" className="d-flex align-items-center">
                       {/* <span class="fi fi-np fis country-flag"></span> */}
                       <Image src={NepF} />
-                      <span className="ms-2 mb-2">Nepal</span>
+                      <span className="">Nepal</span>
                     </a>
                   </li>
                 </div>
@@ -161,61 +168,17 @@ const UpperFooter = () => {
 
               <h3 className="footer-title">Payment Methods</h3>
               <ul className="footer-link-list ps-0 m-0">
-                {/* <div className="footer-flags d-flex mb-2">
-                  <Mastercard
-                    width={40}
-                    height={40}
-                    style={{ marginRight: "8px" }}
-                  />
-                  <Visa width={40} height={40} style={{ marginRight: "8px" }} />
-                  <Paypal
-                    width={40}
-                    height={40}
-                    style={{ marginRight: "8px" }}
-                  />
-                  <Maestro
-                    width={40}
-                    height={40}
-                    style={{ marginRight: "8px" }}
-                  />
-                </div> */}
 
-                <div className="footer-flags d-flex mb-2">
-                  <Image src={PaymentCard} />
-                  {/* <Discover
-                    width={40}
-                    height={40}
-                    style={{ marginRight: "8px" }}
-                  />
-                  <Alipay
-                    width={40}
-                    height={40}
-                    style={{ marginRight: "8px" }}
-                  />
-                  <Hiper
-                    width={40}
-                    height={40}
-                    style={{ marginRight: "8px" }}
-                  />
-                  <Unionpay
-                    width={40}
-                    height={40}
-                    style={{ marginRight: "8px" }}
-                  /> */}
+                <div className="footer-flags d-flex">
+                  <div className="">
+                    <Image src={ATMCard} />
+                  </div>
                 </div>
-
-                {/* <div className="footer-flags d-flex mb-2">
-                  <Generic
-                    width={40}
-                    height={40}
-                    style={{ marginRight: "8px" }}
-                  />
-                </div> */}
               </ul>
 
               <h3 className="footer-title">Verified by</h3>
               <ul className="footer-link-list ps-0 m-0">
-                <div className="footer-flags d-flex mb-2">
+                <div className="footer-flags d-flex">
                   {/* <Mir width={80} height={80} style={{ marginRight: "8px" }} /> */}
                   <Image src={Verified} />
                 </div>
@@ -242,6 +205,6 @@ const UpperFooter = () => {
       </div>
     </div>
   );
-}
+};
 
-export default UpperFooter
+export default UpperFooter;

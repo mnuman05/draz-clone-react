@@ -18,7 +18,7 @@ import SuperSudaWeek from "../../images/super-sauda-week.png";
 
 import { MDBBtn, MDBIcon } from "mdb-react-ui-kit";
 import ControlledCarousel from "../../components/Home/Carousel/Carousel";
-import { categories, flashSale } from "../../constants/Home/home";
+import { categories, flashSale, forYou } from "../../constants/Home/home";
 import ProductPriceCard from "../../shared/ProductPriceCard/ProductPriceCard";
 
 const Home = () => {
@@ -65,7 +65,7 @@ const Home = () => {
           <div class="text-white p-1 single-filter-option health-and-beauty">
             <a href="" className="d-flex">
               <Image src={MotherAndBaby} style={{ marginLeft: "3px" }} />
-              <span className="filter-link-heading mt-1 ms-1">
+              <span className="filter-link-heading mt-1 mother-baby">
                 Mother & Baby
               </span>
             </a>
@@ -85,7 +85,7 @@ const Home = () => {
           <div class="text-white p-1 single-filter-option health-and-beauty">
             <a href="" className="d-flex">
               <Image src={ElectronicDevices} style={{ marginLeft: "3px" }} />
-              <span className="filter-link-heading mt-1 eletronic-heading">
+              <span className="filter-link-heading mt-1 eletronic-heading elect-devi">
                 Electronic Devices
               </span>
             </a>
@@ -98,7 +98,7 @@ const Home = () => {
                 src={ElectronicAccessories}
                 style={{ marginLeft: "3px" }}
               />
-              <span className="filter-link-heading mt-1 ms-1">
+              <span className="filter-link-heading mt-1 elect-asscc">
                 Electronic Accessories
               </span>
             </a>
@@ -108,7 +108,7 @@ const Home = () => {
           <div class="text-white p-1 single-filter-option health-and-beauty">
             <a href="" className="d-flex">
               <Image src={TvAndHome} style={{ marginLeft: "3px" }} />
-              <span className="filter-link-heading mt-1 ms-1">
+              <span className="filter-link-heading mt-1 tv-home">
                 TV & Home Appliances
               </span>
             </a>
@@ -118,7 +118,7 @@ const Home = () => {
           <div class="text-white p-1 single-filter-option health-and-beauty">
             <a href="" className="d-flex">
               <Image src={Sports} style={{ marginLeft: "3px" }} />
-              <span className="filter-link-heading mt-1 ms-1">
+              <span className="filter-link-heading mt-1 sport-outd">
                 Sports & Outdoor
               </span>
             </a>
@@ -128,7 +128,7 @@ const Home = () => {
           <div class="text-white p-1 single-filter-option health-and-beauty">
             <a href="" className="d-flex">
               <Image src={Watch} style={{ marginLeft: "3px" }} />
-              <span className="filter-link-heading mt-1 ms-1">
+              <span className="filter-link-heading mt-1 watch-bag">
                 Watches, Bags & Jewellery
               </span>
             </a>
@@ -152,7 +152,7 @@ const Home = () => {
         </div>
       </div>
 
-      <Row className="mt-3 mb-3">
+      <Row className="mt-3 mb-3 feature-row">
         <Col
           xs={6}
           sm={4}
@@ -170,7 +170,7 @@ const Home = () => {
           xs={6}
           sm={4}
           md={2}
-          className="d-flex align-items-center usp-items p-0"
+          className="d-flex align-items-center usp-items p-0 nation-wide"
         >
           <Image
             src={
@@ -183,20 +183,20 @@ const Home = () => {
           xs={6}
           sm={4}
           md={2}
-          className="d-flex align-items-center usp-items p-0"
+          className="d-flex align-items-center usp-items p-0 free-nd-easy"
         >
           <Image
             src={
               "	https://icms-image.slatic.net/images/ims-web/f2a7f550-3a25-478d-9879-e6aa419c7ebf.png"
             }
           />
-          <p className="fs-15 m-0 ms-1">Free & Easy Returns</p>
+          <p className="fs-15 m-0">Free & Easy Returns</p>
         </Col>
         <Col
           xs={6}
           sm={4}
           md={2}
-          className="d-flex align-items-center p-0 usp-items"
+          className="d-flex align-items-center p-0 usp-items best-price"
         >
           <Image
             src={
@@ -411,35 +411,6 @@ const Home = () => {
 
           <div class="card-fs-content-body J_FSBody" title="Flash Sale">
             {flashSale.map((flssal) => (
-              // <a
-              //   key={flssal.id}
-              //   href="//www.daraz.pk/products/electric-stove-for-cooking-hot-plate-heat-up-in-just-2-mins-easy-to-clean-1000w-automatic-i379539881-s1872952419.html"
-              //   class="card-fs-content-body-unit hp-mod-card-hover J_FSItemUnit"
-              // >
-              //   <div class="fs-card-img-container">
-              //     <img
-              //       class="fs-card-img"
-              //       alt="Electric Stove for cooking, Hot Plate heat up in just 2 mins, Easy to clean, 1000W, Automatic"
-              //       src={flssal.link}
-              //     />
-              //   </div>
-
-              //   <div class="fs-card-text">
-              //     <div class="fs-card-title">{flssal.name}</div>
-              //     <div class="fs-card-price">
-              //       <span class="currency">Rs.</span>
-              //       <span class="price">{flssal.currentPrice}</span>
-              //     </div>
-              //     <div class="fs-card-origin-price">
-              //       <span class="fs-origin-price">
-              //         <span class="currency">Rs.</span>
-              //         <span class="price">{flssal.previousPrice}</span>
-              //       </span>
-              //       <span class="fs-discount">{flssal.percentageOff}</span>
-              //     </div>
-              //     <div class="fs-card-sold"></div>
-              //   </div>
-              // </a>
               <ProductPriceCard
                 id={flssal.id}
                 link={flssal.link}
@@ -450,38 +421,36 @@ const Home = () => {
               />
             ))}
           </div>
-
-          {/* {categories.map((catg) => (
-            <div
-              key={catg.id}
-              class="card-categories-li hp-mod-card-hover align-left"
-            >
-              <a
-                class="card-categories-li-content"
-                href="//www.daraz.pk/bedroom-clothes-storage/?up_id=381708404&amp;clickTrackInfo=e741ce06-8a80-4350-80a2-c8c8141d51f3__10000419__381708404__u2i__0.9459953657835023__platform__ANDROID__scm__1007.40350.322036.__brandID__39704__SellerID__6005014254038__IsHitHot__1__IfCart__0__IfOrder__0__IfLeafCatCart__0__IfLeafCatOrd__0__IfBrandCart__0__IfBrandOrd__0__IfCartSeller__0__IfOrdSeller__0__item_sold__0__GmvNow__0.0__item_day_sold__0__ctr__0.0__cvr__0.0__rank__0.0__322036__30350&amp;from=hp_categories&amp;item_id=381708404&amp;version=v2"
-                exp-tracking="category"
-                algo_scm=""
-                trackinfo="e741ce06-8a80-4350-80a2-c8c8141d51f3__10000419__381708404__u2i__0.9459953657835023__platform__ANDROID__scm__1007.40350.322036.__brandID__39704__SellerID__6005014254038__IsHitHot__1__IfCart__0__IfOrder__0__IfLeafCatCart__0__IfLeafCatOrd__0__IfBrandCart__0__IfBrandOrd__0__IfCartSeller__0__IfOrdSeller__0__item_sold__0__GmvNow__0.0__item_day_sold__0__ctr__0.0__cvr__0.0__rank__0.0__322036__30350"
-                clicktrackinfo="e741ce06-8a80-4350-80a2-c8c8141d51f3__10000419__381708404__u2i__0.9459953657835023__platform__ANDROID__scm__1007.40350.322036.__brandID__39704__SellerID__6005014254038__IsHitHot__1__IfCart__0__IfOrder__0__IfLeafCatCart__0__IfLeafCatOrd__0__IfBrandCart__0__IfBrandOrd__0__IfCartSeller__0__IfOrdSeller__0__item_sold__0__GmvNow__0.0__item_day_sold__0__ctr__0.0__cvr__0.0__rank__0.0__322036__30350"
-                title="Wardrobe"
-                organisers=""
-                data-aplus-ae="x1_2268b5f6"
-                data-spm-anchor-id="a2a0e.home.categories.1"
-              >
-                <div class="card-categories-image-container">
-                  <img
-                    class="image"
-                    src={catg.link}
-                    alt="Wardrobe Organisers"
-                  />
-                </div>
-                <div class="card-categories-name">
-                  <span class="text">{catg.name}</span>
-                </div>
-              </a>
-            </div>
-          ))} */}
         </div>
+      </div>
+
+      {/* just for you */}
+
+      <div className="row mt-4">
+        {/* <div className="home-category-heading"> */}
+        <h3 className="for-you-category-title">Just For You</h3>
+        {/* </div> */}
+        <div className="category-card">
+          <div class="card-fs-content-body J_FSBody" title="Flash Sale">
+            {forYou.map((fru) => (
+              <ProductPriceCard
+                id={fru.id}
+                link={fru.link}
+                name={fru.name}
+                currentPrice={fru.currentPrice}
+                previousPrice={fru.previousPrice}
+                percentageOff={fru.percentageOff}
+                width={189}
+                height={325}
+                rating={fru.stars}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div className="load-more d-flex justify-content-center">
+        <button className="load-more-btn">Load Mode</button>
       </div>
     </div>
   );
