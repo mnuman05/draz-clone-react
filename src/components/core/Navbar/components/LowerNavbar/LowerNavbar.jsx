@@ -12,6 +12,7 @@ import LoginIcon from "../../../../../images/login-icon.png";
 import Earth from "../../../../../images/earth.png";
 import Cart from "../../../../../images/cart.png";
 import NavLine from "../../../../../images/nav-line.png";
+import { Link } from "react-router-dom";
 
 
 const LowerNavbar = () => {
@@ -20,16 +21,12 @@ const LowerNavbar = () => {
       <div className="logo-bar-content header-content d-flex justify-content-between">
         <div className="d-flex align-items-center">
           <Sidebar />
-          <a
-            className="logo nav-draz-logo"
-            href="//www.daraz.pk"
-            data-spm="dhome"
-          >
+          <Link className="logo nav-draz-logo" to="/" data-spm="dhome">
             <img
               src="//icms-image.slatic.net/images/ims-web/e650d6ca-1841-4646-b0e9-4ddbf2beb731.png"
               alt="Daraz"
             />
-          </a>
+          </Link>
           <div className="d-none d-md-flex categories-dropdown d-flex justify-content-center">
             <a href="">Categories</a>
             <RiArrowDropDownLine />
@@ -41,7 +38,7 @@ const LowerNavbar = () => {
         </div>
 
         <div className="d-flex align-items-center mb-2 me-2 me-md-0 justify-content-lg-evenly">
-          <div className="login-btn ms-3 d-flex hover-effect">
+          <div className="login-btn ms-3 d-flex hover-effect cursor-pointer">
             <Image src={LoginIcon} />
             <span
               className="mt-2"
@@ -54,14 +51,14 @@ const LowerNavbar = () => {
             </span>
           </div>
           <div className="nav-line">
-            <Image
-              src={NavLine}
-            />
+            <Image src={NavLine} />
           </div>
-          <div className="text-nowrap login-btn sign-up">
-            <span>Sign Up</span>
+          <div className="text-nowrap login-btn sign-up cursor-pointer">
+            <Link to={"/signup"}>
+              <span>Sign Up</span>
+            </Link>
           </div>
-          <div className="nav-earth-icon d-none d-md-block ms-3 login-btn d-flex justify-content-center align-items-center">
+          <div className="nav-earth-icon d-none d-md-block ms-3 login-btn d-flex justify-content-center align-items-center cursor-pointer">
             <Image
               src={Earth}
               style={{
@@ -69,7 +66,7 @@ const LowerNavbar = () => {
               }}
             />
           </div>
-          <div className="cart-image">
+          <div className="cart-image cursor-pointer">
             <Image src={Cart} />
           </div>
         </div>

@@ -1,158 +1,28 @@
 import React from "react";
 import "./home.css";
-import { Button, Card, Col, Image, Row } from "react-bootstrap";
-import GroceryAndPets from "../../images/grocery-and-pets.png";
-import HealthAndBeauty from "../../images/health-and-beauty.png";
-import MenFashion from "../../images/men-fashion.png";
-import WomanFashion from "../../images/woman-fashion.png";
-import MotherAndBaby from "../../images/mother-and-baby.png";
-import HomeAndLifestyle from "../../images/home-and-lifestyle.png";
+import { Image } from "react-bootstrap";
 
-import ElectronicDevices from "../../images/electronic-devices.png";
-import ElectronicAccessories from "../../images/electronic-accssories.png";
-import TvAndHome from "../../images/tv-home.png";
-import Sports from "../../images/sports.png";
-import Watch from "../../images/watch.png";
-import Automobile from "../../images/automotive.png";
 import SuperSudaWeek from "../../images/super-sauda-week.png";
 
-import { MDBBtn, MDBIcon } from "mdb-react-ui-kit";
 import ControlledCarousel from "../../components/Home/Carousel/Carousel";
 import { categories, flashSale, forYou } from "../../constants/Home/home";
 import ProductPriceCard from "../../shared/ProductPriceCard/ProductPriceCard";
+import Categories from "../../components/Home/Categories/Categories";
+import FeatureHeading from "../../components/Home/FeatureHeading/FeatureHeading";
 
 const Home = () => {
   return (
     <div class="container home-first">
       <div class="row">
-        <div class="col-lg-3 d-none d-md-block home-filter-box ">
-          <div class="text-white p-1 mt-1 single-filter-option">
-            <a href="" className="d-flex">
-              <Image src={GroceryAndPets} />
-              <span className="filter-link-heading">Groceries & Pets</span>
-            </a>
-            {/* Column 1 (Col-4) */}
-          </div>
-
-          <div class="text-white p-1 single-filter-option health-and-beauty">
-            <a href="" className="d-flex">
-              <Image src={HealthAndBeauty} style={{ marginLeft: "3px" }} />
-              <span className="filter-link-heading mt-1">Health & Beauty</span>
-            </a>
-            {/* Column 1 (Col-4) */}
-          </div>
-
-          <div class="text-white p-1 single-filter-option health-and-beauty">
-            <a href="" className="d-flex">
-              <Image src={MenFashion} style={{ marginLeft: "3px" }} />
-              <span className="filter-link-heading mt-1 ms-1">
-                Men's Fashion
-              </span>
-            </a>
-            {/* Column 1 (Col-4) */}
-          </div>
-
-          <div class="text-white p-1 single-filter-option health-and-beauty">
-            <a href="" className="d-flex">
-              <Image src={WomanFashion} style={{ marginLeft: "3px" }} />
-              <span className="filter-link-heading mt-1 ms-2">
-                Women's Fashion
-              </span>
-            </a>
-            {/* Column 1 (Col-4) */}
-          </div>
-
-          <div class="text-white p-1 single-filter-option health-and-beauty">
-            <a href="" className="d-flex">
-              <Image src={MotherAndBaby} style={{ marginLeft: "3px" }} />
-              <span className="filter-link-heading mt-1 mother-baby">
-                Mother & Baby
-              </span>
-            </a>
-            {/* Column 1 (Col-4) */}
-          </div>
-
-          <div class="text-white p-1 single-filter-option health-and-beauty">
-            <a href="" className="d-flex">
-              <Image src={HomeAndLifestyle} style={{ marginLeft: "3px" }} />
-              <span className="filter-link-heading mt-1 ms-1">
-                Home & Lifestyle
-              </span>
-            </a>
-            {/* Column 1 (Col-4) */}
-          </div>
-
-          <div class="text-white p-1 single-filter-option health-and-beauty">
-            <a href="" className="d-flex">
-              <Image src={ElectronicDevices} style={{ marginLeft: "3px" }} />
-              <span className="filter-link-heading mt-1 eletronic-heading elect-devi">
-                Electronic Devices
-              </span>
-            </a>
-            {/* Column 1 (Col-4) */}
-          </div>
-
-          <div class="text-white p-1 single-filter-option health-and-beauty">
-            <a href="" className="d-flex">
-              <Image
-                src={ElectronicAccessories}
-                style={{ marginLeft: "3px" }}
-              />
-              <span className="filter-link-heading mt-1 elect-asscc">
-                Electronic Accessories
-              </span>
-            </a>
-            {/* Column 1 (Col-4) */}
-          </div>
-
-          <div class="text-white p-1 single-filter-option health-and-beauty">
-            <a href="" className="d-flex">
-              <Image src={TvAndHome} style={{ marginLeft: "3px" }} />
-              <span className="filter-link-heading mt-1 tv-home">
-                TV & Home Appliances
-              </span>
-            </a>
-            {/* Column 1 (Col-4) */}
-          </div>
-
-          <div class="text-white p-1 single-filter-option health-and-beauty">
-            <a href="" className="d-flex">
-              <Image src={Sports} style={{ marginLeft: "3px" }} />
-              <span className="filter-link-heading mt-1 sport-outd">
-                Sports & Outdoor
-              </span>
-            </a>
-            {/* Column 1 (Col-4) */}
-          </div>
-
-          <div class="text-white p-1 single-filter-option health-and-beauty">
-            <a href="" className="d-flex">
-              <Image src={Watch} style={{ marginLeft: "3px" }} />
-              <span className="filter-link-heading mt-1 watch-bag">
-                Watches, Bags & Jewellery
-              </span>
-            </a>
-            {/* Column 1 (Col-4) */}
-          </div>
-
-          <div class="text-white p-1 single-filter-option health-and-beauty">
-            <a href="" className="d-flex">
-              <Image src={Automobile} style={{ marginLeft: "3px" }} />
-              <span className="filter-link-heading mt-1 ms-1">
-                Automotive & Motorbike
-              </span>
-            </a>
-            {/* Column 1 (Col-4) */}
-          </div>
-        </div>
-        <div class="col-12 col-lg-9 carousel-container">
+        <Categories />
+        <div class="col-12 col-lg-9 carousel-container p-0">
           <div class="text-white">
             <ControlledCarousel />
           </div>
         </div>
       </div>
-
-      <Row className="mt-3 mb-3 feature-row">
+      <FeatureHeading />
+      {/* <Row className="mt-3 mb-3 feature-row">
         <Col
           xs={6}
           sm={4}
@@ -231,7 +101,7 @@ const Home = () => {
           />
           <p className="fs-15 m-0 ms-2">Daraz Verified</p>
         </Col>
-      </Row>
+      </Row> */}
 
       <div className="super-soda-week">
         <Image src={SuperSudaWeek} />

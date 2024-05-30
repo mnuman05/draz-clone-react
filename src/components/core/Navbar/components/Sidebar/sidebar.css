@@ -5,7 +5,7 @@
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black color */
-  z-index: 9; /* Ensure the backdrop is behind the sidebar */
+  /* z-index: 9; Ensure the backdrop is behind the sidebar */
 }
 
 .bg-orange {
@@ -16,8 +16,19 @@
     width: 30%;
     background-color: #f75605;
     height: 100vh;
+    z-index: 998;
 }
 .anchor-link {
   text-decoration: none; /* Remove underline */
   color: white; /* Set color to white */
+}
+
+.sidebar .logo {
+  max-width: 82px;
+}
+
+.sidebar-links {
+    padding: 21px;
+    margin-top: 8px !important;
+
 }

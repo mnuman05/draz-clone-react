@@ -160,6 +160,10 @@
     margin-right: 9px;
 }
 
+.sign-up a {
+    text-decoration: none;
+}
+
 .nav-line {
     margin-top: 6px;
     margin-right: 1px;

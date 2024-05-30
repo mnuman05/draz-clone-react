@@ -1,8 +1,6 @@
 import React from "react";
 import "./signup.css";
 
-import { MDBBtn, MDBIcon } from "mdb-react-ui-kit";
-
 import SocialIcon from "../../../images/social-button.png";
 import EyeIcon from "../../../images/eye-icon.png";
 
@@ -196,56 +194,7 @@ const Signup = () => {
             </div>
 
             <div className="register-field d-flex flex-column mb-1 register-social-icon">
-              {/* <div className="register-social-button">
-                <a
-                  data-mdb-ripple-init
-                  class="btn btn-primary"
-                  style={{ backgroundColor: "#55acee" }}
-                  href="#!"
-                  role="button"
-                >
-                  <i class="fab fa-twitter me-2"></i>Twitter
-                </a>
-
-                <a
-                  data-mdb-ripple-init
-                  class="btn btn-primary"
-                  style={{ backgroundColor: " #3b5998;" }}
-                  //   style="background-color: #3b5998;"
-                  href="#!"
-                  role="button"
-                >
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-
-                <i class="bi bi-facebook"></i>
-              </div> */}
-
               <div className="register-icons d-flex justify-content-between">
-                {/* <MDBBtn
-                  style={{
-                    backgroundColor: "#3c5999",
-                    width: "49%",
-                    border: "none",
-                    borderRadius: "3px",
-                  }}
-                  href="#"
-                >
-                  <MDBIcon fab icon="facebook" className="me-2" /> Facebook
-                </MDBBtn>
-
-                <MDBBtn
-                  style={{
-                    backgroundColor: "#d44937",
-                    width: "49%",
-                    border: "none",
-                    borderRadius: "3px",
-                  }}
-                  href="#"
-                >
-                  <MDBIcon fab icon="google-plus" className="me-2" /> Google
-                </MDBBtn> */}
-
                 <Image src={SocialIcon} />
               </div>
             </div>

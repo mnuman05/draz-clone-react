@@ -6,27 +6,12 @@ import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
 import Header from "../components/core/Navbar/Header";
 import Footer from "../components/core/Footer/Footer";
-// import Sidebar from "../components/Sidebar/Sidebar.jsx";
-// import { LARGE_SIDEBAR_WIDTH, SMALL_SIDEBAR_WIDTH } from "../config/index.js";
-// import "../pages/Home/css/home.css";
+
 import './layout.css'
+import MessageBox from "../shared/MessageBox/MessageBox";
 
 function Layout() {
-    console.log("cine");
-//   const [showSidebar, setShowSidebar] = useState(true);
-//   const [sidebarWidth, setSidebarWidth] = useState(SMALL_SIDEBAR_WIDTH);
 
-//   const handleSidebarToggle = () => {
-//     if (window.innerWidth >= 992) {
-//       setSidebarWidth(
-//         sidebarWidth === LARGE_SIDEBAR_WIDTH
-//           ? SMALL_SIDEBAR_WIDTH
-//           : LARGE_SIDEBAR_WIDTH
-//       );
-//     } else {
-//       setShowSidebar(!showSidebar);
-//     }
-//   };
 
   return (
     <div className="main">
@@ -35,6 +20,7 @@ function Layout() {
         <Outlet />
       </div>
       <Footer />
+      {/* <MessageBox /> */}
     </div>
   );
 }

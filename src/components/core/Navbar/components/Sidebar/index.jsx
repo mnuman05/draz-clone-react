@@ -29,7 +29,7 @@ export default function Sidebar() {
             alt="Daraz"
           />
         </a>
-        <ul className="text-white h-100 mb-0 mt-5">
+        <ul className="text-white h-100 mb-0 sidebar-links">
           <li className="mb-2">
             <a href="//www.daraz.pk/sell" className="anchor-link">
               Become a Seller

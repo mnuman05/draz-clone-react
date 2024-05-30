@@ -219,8 +219,8 @@ export const forYou = [
 
   {
     id: 9,
-    name: "6 Pockets Double-sided Hanging Storage Bags with Hanging Hook / Handbag, Purse, Bags Organizer 1 Pcs",
-    link: "	https://pk-live-21.slatic.net/kf/S01a17d1aef4b423390bb729bbd3890fe2.jpg",
+    name: "Women Handbag and Purse Simple Designer Fashion Casual  Messenger Bag Wide Strap Shoulder Bag Female Small Phone Crossbody Bag",
+    link: "	https://static-01.daraz.pk/p/471f4eb46f446b5fc85c85588937c494.jpg_200x200q75-product.jpg_.webp",
     currentPrice: "254",
     previousPrice: "500",
     percentageOff: "-49%",
@@ -356,12 +356,12 @@ export const forYou = [
     percentageOff: "-49%",
     stars: "23423",
   },
-  {
-    id: 25,
-    name: "Luxury Roman Crystal Geometric Chain Bracelets for Women Trendy 2024 Goth Full Rhinestone Charm Bangles Wed Jewelry Accessories",
-    link: "https://pk-live-21.slatic.net/kf/Sc62c621d681340b4860c61e6bd80bde29.jpg",
-    previousPrice: "199",
-    percentageOff: "-78%",
-    stars: "235",
-  },
+  // {
+  //   id: 25,
+  //   name: "Luxury Roman Crystal Geometric Chain Bracelets for Women Trendy 2024 Goth Full Rhinestone Charm Bangles Wed Jewelry Accessories",
+  //   link: "https://pk-live-21.slatic.net/kf/Sc62c621d681340b4860c61e6bd80bde29.jpg",
+  //   previousPrice: "199",
+  //   percentageOff: "-78%",
+  //   stars: "235",
+  // },
 ];
