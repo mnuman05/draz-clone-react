@@ -279,7 +279,7 @@ const Home = () => {
             </div>
           </div> */}
 
-          <div class="card-fs-content-body J_FSBody" title="Flash Sale">
+          <div className="d-flex flex-wrap justify-content-center">
             {flashSale.map((flssal) => (
               <ProductPriceCard
                 id={flssal.id}
@@ -301,7 +301,10 @@ const Home = () => {
         <h3 className="for-you-category-title">Just For You</h3>
         {/* </div> */}
         <div className="category-card">
-          <div class="card-fs-content-body J_FSBody" title="Flash Sale">
+          <div
+            class="d-flex flex-wrap justify-content-center"
+            title="Flash Sale"
+          >
             {forYou.map((fru) => (
               <ProductPriceCard
                 id={fru.id}
