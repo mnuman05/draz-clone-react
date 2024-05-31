@@ -952,3 +952,66 @@ wrapper .seller-im-content {
 .pdp-link, .pdp-link:visited {
     color: #1a9cb7;
 }
+
+
+@media (max-width: 1199px) {
+    .bradcrumb {
+        overflow: auto;
+    }
+    .product-main-card {
+                width: 100% !important;
+
+    }
+    .product-pic-card {
+        width: 50% !important;
+    }
+
+    .product-detail-card {
+        width: 50% !important;
+    }
+
+    .product-location-card {
+        width: 100% !important;
+    }
+
+    .delivery-header__tooltip {
+        display: none;
+    }
+
+    .location__body {
+    display: flex;
+    justify-content: space-between;
+}
+.delivery__location .location__address {
+    max-width: 100%;
+    word-break: break-word;
+}
+}
+@media (max-width: 991px) {
+    #module_promotion_tags {
+        margin-top: 14px !important;
+    }
+}
+
+@media (max-width: 767px) {
+     .product-pic-card {
+        width: 100% !important;
+    }
+
+    .product-detail-card {
+        width: 100% !important;
+    }
+
+    .product-location-card {
+        width: 100% !important;
+    }
+
+    .gallery-preview-panel__content {
+        width: 100%;
+    }
+
+    #module_add_to_cart {
+        display: flex;
+        justify-content: center;
+    }
+}

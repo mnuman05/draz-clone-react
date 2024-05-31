@@ -75,7 +75,7 @@ button, [role="button"] {
 a {
   cursor: pointer;
   color: inherit;
-  text-decoration: inherit;
+  text-decoration: none !important;
   -webkit-tap-highlight-color: transparent;
 }
 

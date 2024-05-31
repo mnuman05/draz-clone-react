@@ -1,7 +1,7 @@
 .home-filter-box {
   background-color: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 0 2px 0 rgba(0, 0, 0, .25);
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.25);
   width: 238px !important;
   height: 344px;
   margin-right: 10px;
@@ -32,69 +32,63 @@
 }
 
 .mother-baby {
-    margin-left: 1px;
+  margin-left: 1px;
 }
 
 .elect-asscc {
-    margin-left: 1px !important
+  margin-left: 1px !important;
 }
 
-.tv-home{
-        margin-left: 1px !important
-
+.tv-home {
+  margin-left: 1px !important;
 }
 
 .sport-outd {
-    margin-left: 1px !important
+  margin-left: 1px !important;
 }
 
 .watch-bag {
-        margin-left: 1px !important
-
+  margin-left: 1px !important;
 }
 
 .carousel-control-prev {
-    width: auto !important;
+  width: auto !important;
 }
 .carousel-control-next {
-    width: auto !important;
+  width: auto !important;
 }
 .carousel-control-prev-icon {
-    height: 64px !important;
-    width: 24px !important;
-    background-color: rgba(0, 0, 0, .3) !important;
-    cursor: pointer !important;
+  height: 64px !important;
+  width: 24px !important;
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  cursor: pointer !important;
 }
-.carousel-control-next-icon{
-    height: 64px !important;
-    width: 24px !important;
-    background-color: rgba(0, 0, 0, .3) !important;
-    cursor: pointer !important;
+.carousel-control-next-icon {
+  height: 64px !important;
+  width: 24px !important;
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  cursor: pointer !important;
 }
 
 .carousel-indicators {
-    margin-bottom: 1.7rem !important;
-
+  margin-bottom: 1.7rem !important;
 }
 
 .carousel-indicators [data-bs-target] {
-    
-    width: 10px !important;
-    height: 10px !important;
-    border-radius: 20px !important;
-    border-top: none !important;
-    border-bottom: none !important;
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 20px !important;
+  border-top: none !important;
+  border-bottom: none !important;
 }
 
-.nation-wide{
-    margin-left: -18px;
+.nation-wide {
+  margin-left: -18px;
 }
 
-.free-nd-easy p{
-margin-left: 4px !important;
+.free-nd-easy p {
+  margin-left: 4px !important;
 }
-
-
 
 .health-and-beauty a span {
   margin-top: -9px;
@@ -105,8 +99,8 @@ margin-left: 4px !important;
   margin-left: 0px !important;
 }
 .best-price {
-    /* margin-left: 6px; */
-    width: 201px;
+  /* margin-left: 6px; */
+  width: 201px;
 }
 
 .usp-items::after {
@@ -150,8 +144,8 @@ margin-left: 4px !important;
 }
 
 .category-card {
-    padding: 0 !important;
-    padding-left: 9px;
+  padding: 0 !important;
+  padding-left: 9px;
 }
 
 /* .category-card .card {
@@ -242,6 +236,7 @@ margin-left: 4px !important;
   overflow: hidden;
   margin-bottom: 4px;
   font-size: 14px;
+  color: #000;
 }
 
 .card-fs-content-body-unit .fs-card-price {
@@ -441,24 +436,24 @@ margin-left: 4px !important;
 }
 
 .load-more {
-    padding-top: 20px;
-    padding-bottom: 9px;
-    clear: both;
+  padding-top: 20px;
+  padding-bottom: 9px;
+  clear: both;
 }
 
-.load-more-btn{
-    font-family: Roboto-Medium;
-    margin: 0 auto;
-    display: block;
-    width: 387px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    font-size: 14px;
-    color: #f85606;
-    border: 1px solid #f85606;
-    text-transform: uppercase;
-    cursor: pointer;
+.load-more-btn {
+  font-family: Roboto-Medium;
+  margin: 0 auto;
+  display: block;
+  width: 387px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #f85606;
+  border: 1px solid #f85606;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 @media (min-width: 1200px) {
@@ -471,60 +466,51 @@ margin-left: 4px !important;
   }
 }
 
-
-
 @media (min-width: 992px) {
   .col-lg-9 {
     flex: 0 0 auto !important;
     width: 80% !important;
   }
-
 }
-
 
 .feature-row {
-        background: #fff1eb;
-            border-radius: 12px
+  background: #fff1eb;
+  border-radius: 12px;
 }
-
 
 .carousel-container {
-    width: 79% !important
+  width: 79% !important;
 }
 
+@media (max-width: 1181px) {
+  .home-filter-box {
+    display: none !important;
+  }
 
-    @media (max-width: 1181px) {
-    .home-filter-box {
-        display: none !important;
-    }
+  .carousel-container {
+    width: 100% !important;
+  }
+}
 
-    .carousel-container {
-      width: 100% !important;
-    }
+.features-section {
+  background-color: #fff1eb;
+  border-radius: 12px;
+  flex-wrap: wrap;
+  /* gap: 10px */
+}
 
-    }
+.features-section:hover {
+  background: #ffe8de;
+}
 
+@media (max-width: 1179px) {
+  .feature-heading {
+    margin-left: 12px !important;
+  }
+}
 
-    .features-section{
-      background-color: #fff1eb;
-      border-radius: 12px;
-      flex-wrap: wrap;
-      /* gap: 10px */
-    }
-
-    .features-section:hover {
-          background: #ffe8de;
-    }
-
-    @media (max-width: 1179px) {
-      .feature-heading {
-        margin-left: 12px !important
-      }
-    }
-
-      @media (max-width: 1179px) {
-      .features-section {
-        gap: 10px !important;
-      }
-    }
-    
+@media (max-width: 1179px) {
+  .features-section {
+    gap: 10px !important;
+  }
+}

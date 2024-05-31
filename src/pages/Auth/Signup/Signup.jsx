@@ -1,5 +1,5 @@
 import React from "react";
-import "./Signup.css";
+import "./signup.css";
 
 import SocialIcon from "../../../images/social-button.png";
 import EyeIcon from "../../../images/eye-icon.png";
